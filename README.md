@@ -1,4 +1,4 @@
-# AeroCast
+# AeroCast 🌬️
 
 ## Air Quality Index (AQI) Forecasting System using LSTM
 
