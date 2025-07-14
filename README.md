@@ -71,7 +71,7 @@ These metrics indicate that the model's predictions are, on average, very close 
 1.  **Clone the repository:**
 
     ```
-    git clone [https://github.com/Kunsh1/AeroCast.git](https://github.com/Kunsh1/AeroCast.git)
+    git clone https://github.com/Kunsh1/AeroCast.git
     cd AeroCast
     ```
 
