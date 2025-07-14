@@ -44,7 +44,7 @@ This project develops an advanced Air Quality Index (AQI) forecasting system des
 
 ## 📊 Data Sources
 
-* **Historical AQI Data (`AQI Dataset.csv`):** This is the primary historical dataset for model training. It was created by collecting raw hourly AQI data from the **CPCB (Central Pollution Control Board) website** for multiple years, combining it, and then performing initial cleaning and preprocessing. It includes historical AQI and various meteorological parameters.
+* **Historical AQI Data (`AQI Dataset.csv`):** This is the primary historical dataset for model training. It was created by collecting raw hourly AQI data **specifically for Delhi** from the **CPCB (Central Pollution Control Board) website** for multiple years, combining it, and then performing initial cleaning and preprocessing. It includes historical AQI and various meteorological parameters.
 
 * **Real-time Current AQI & Pollutant Forecasts:** **WAQI (World Air Quality Index) API**.
 
@@ -71,7 +71,7 @@ These metrics indicate that the model's predictions are, on average, very close 
 1.  **Clone the repository:**
 
     ```
-    git clone https://github.com/Kunsh1/AeroCast.git
+    git clone [https://github.com/Kunsh1/AeroCast.git](https://github.com/Kunsh1/AeroCast.git)
     cd AeroCast
     ```
 
@@ -92,9 +92,9 @@ These metrics indicate that the model's predictions are, on average, very close 
 
 4.  **Obtain API Keys:**
 
-    * **OpenWeatherMap API Key:** Register at [https://openweathermap.org/](https://openweathermap.org/) to get your API key.
+    * **OpenWeatherMap API Key:** Register at <https://openweathermap.org/> to get your API key.
 
-    * **WAQI API Token:** Register at [https://aqicn.org/api/](https://aqicn.org/api/) to get your API token.
+    * **WAQI API Token:** Register at <https://aqicn.org/api/> to get your API token.
 
 5.  **Prepare `AQI Dataset.csv`:** Ensure your preprocessed historical AQI data is available as `AQI Dataset.csv` in the project root directory. This CSV file should contain the following columns:
 
@@ -145,6 +145,8 @@ These metrics indicate that the model's predictions are, on average, very close 
     ```
 
     *(If using Google Colab, simply run all cells in your notebook.)*
+
+    **Note on Model Training:** The script is configured to automatically load a pre-trained model (`best_aqi_lstm_model.keras`) and scalers (`x_scaler.joblib`, `y_scaler.joblib`) if they exist in the same directory. If these files are not found, or if there's an error loading them, the model will be automatically trained from scratch. You can download the pre-trained model and scalers from the repository to skip the training step.
 
 2.  **GPU Acceleration (Google Colab):**
 
